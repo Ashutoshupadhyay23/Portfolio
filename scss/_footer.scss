@@ -1,0 +1,72 @@
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #181818;
+    gap: 5rem;
+    padding: 4rem 11rem;
+    color: rgb(129, 128, 128);
+    .section {
+        h2 {
+            @include gradientText;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .title {
+            color: white;
+            margin-bottom: 1.1rem;
+        }
+        .social {
+            display: flex;
+            flex-direction: row;
+            margin-top: 1rem;
+            gap: 1rem;
+           
+        }
+        i {
+            font-size: 1.1rem;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    button {
+        margin-top: 1rem;
+        box-shadow: 2px 1000px 1px #181818 inset;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        li {
+            display: flex;
+            gap: 0.7rem;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                @include gradientText;
+            }
+        }
+    }
+    .tags {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li {
+            padding: 0.3rem;
+            width: max-content;
+            border: 1px solid rgb(129, 128, 128);
+            &:hover {
+                color: white !important;
+                @include gradientText;
+            }
+        }
+    }
+}
+
+.lower__footer {
+    color: rgb(129, 128, 128);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 11rem;
+}

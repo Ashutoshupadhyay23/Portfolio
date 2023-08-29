@@ -1,0 +1,110 @@
+.gradient {
+    background: var(--gradient);
+}
+
+.defaultMargin {
+    margin: 0 11rem;
+}
+
+button {
+    color: white;
+    padding: 0.8rem 1.2rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    rgba(255,255,255,0),
+    rgba(255,255,255,0)
+    ),
+    linear-gradient(to right, #dce35b, #45b649);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #0b0b0b inset;
+    border: solid 1px transparent;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.spring {
+    display: flex;
+    align-items: center;
+    margin: 5rem 0;
+    .coil {
+        border-top: white dashed 0.01rem;
+        width: 49.75%;
+    }
+    .bar {
+        width: 0.5%;
+        height: 5.5rem;
+    }
+}
+
+.spring.right {
+    flex-direction: row-reverse;
+}
+
+// ------------About Section
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    text-align: center;
+    h2 {
+        color: white;
+        
+    }
+    p {
+        color: rgb(153, 153, 153);
+        span {
+            color: #45b649;
+        }
+    }
+    // a {
+    //     i {
+    //         color: rgb(153, 153, 153);
+    //     }
+    // }
+
+}
+
+h3 {
+    color: white;
+    i {
+        margin-left: 0.5rem;
+        cursor: pointer;
+        &:hover {
+            color: white !important;
+            @include gradientText;
+        }
+    }
+}
+
+p {
+    color: rgb(129, 129, 128);
+    
+}
+
+.design {
+    position: relative;
+    .background {
+        height: 8rem;
+        width: 12rem;
+        background: linear-gradient(to right, #c5e35b, #45b649);
+        position: absolute;
+        z-index: -1;
+        left: -6px;
+        top: -6px;
+    }
+}
+
+.right {
+    .background {
+        top: auto;
+        left: auto;
+        right: -6px;
+        bottom: -6px;
+    }
+}
