@@ -56,10 +56,7 @@
     }
 
     .portfolio {
-        // position: relative;
         .container {
-            // display: grid;
-            // grid-template-columns: 1fr;
             .portfolio__container {
                 padding: 1rem;
                 .image {
@@ -114,7 +111,7 @@
                     padding-right: 25vw;
                 }
                 textarea {
-                    padding-right: 26vw;
+                    padding-right: 25vw;
                 }
             }
         }

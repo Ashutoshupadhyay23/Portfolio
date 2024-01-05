@@ -565,7 +565,7 @@ footer .tags li:hover {
     padding-right: 25vw;
   }
   .contact .left .form textarea {
-    padding-right: 26vw;
+    padding-right: 25vw;
   }
   .contact .right img {
     width: 100%;
@@ -599,7 +599,7 @@ footer .tags li:hover {
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 5.2vw;
+  font-size: 5vw;
 }
 .hero .image {
   position: relative;

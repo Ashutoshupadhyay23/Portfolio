@@ -7,17 +7,6 @@
 
     .brand__container {
         display: flex;
-        // .brand {
-        //     h2 {
-        //         span {
-        //             margin-left: 0.5rem;
-        //             font-size: 0.9rem;
-        //             letter-spacing: 0.1rem;
-        //             color: #45b649;
-
-        //         }
-        //     }
-        // }
         .toggle {
             display: none;
             cursor: pointer;
@@ -37,13 +26,8 @@
                     &:hover {
                         @include gradientText;
                     }
+                   
                 }
-                // i {
-                //     cursor: pointer;
-                //     &:hover {
-                //         @include gradientText;
-                //     }
-                // }
             }
             button {
                 padding: 0.5rem;
@@ -81,13 +65,6 @@
         margin-bottom: 1.5rem;
         h2 {
             font-size: 1.2rem;
-            // span {
-            //     margin-left: 0.5rem;
-            //     font-size: 0.9rem;
-            //     letter-spacing: 0.1rem;
-            //     color: #45b649;
-
-            // }
         }
     }
     .links {
