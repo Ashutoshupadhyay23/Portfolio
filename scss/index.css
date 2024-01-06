@@ -161,6 +161,7 @@ button {
 }
 .title__container h2 {
   color: white;
+  margin: 0.4rem;
 }
 .title__container p {
   color: rgb(153, 153, 153);
@@ -578,8 +579,9 @@ footer .tags li:hover {
   .lower__footer {
     flex-direction: column;
     text-align: center;
-    padding: 5vw;
+    padding: 2vw;
     gap: 0.7 rem;
+    color: rgb(186, 179, 179);
   }
 }
 .hero {
