@@ -265,24 +265,6 @@ p {
 .languages .container .language img:hover {
   filter: none;
 }
-.languages .container .language:nth-of-type(2) img {
-  filter: grayscale(100) invert(0);
-}
-.languages .container .language:nth-of-type(2) img:hover {
-  filter: none;
-}
-.languages .container .language:nth-of-type(3) img {
-  filter: grayscale(100) invert(0);
-}
-.languages .container .language:nth-of-type(3) img:hover {
-  filter: none;
-}
-.languages .container .language:nth-of-type(4) img {
-  filter: grayscale(100) invert(0);
-}
-.languages .container .language:nth-of-type(4) img:hover {
-  filter: none;
-}
 
 .scrollToTop {
   position: fixed;
