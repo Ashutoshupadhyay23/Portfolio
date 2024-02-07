@@ -1,9 +1,16 @@
 .navbar{
+    width: -webkit-fill-available;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-    padding: 2rem 0;
+    padding: 2rem;
+    background-color: #211e1e;
 
     .brand__container {
         display: flex;
@@ -49,8 +56,8 @@
     top: 0;
     right: -350px;
     height: 100%;
-    width: 55%;
-    background-color: black;
+    width: 25%;
+    background-color: #211e1e;
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -59,7 +66,7 @@
     visibility: hidden;
     transition: 0.4s ease-in-out;
     color: white;
-    padding: 3rem 0;
+    padding: 2rem 0;
     .brand {
         display: flex;
         margin-bottom: 1.5rem;

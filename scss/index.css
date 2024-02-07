@@ -33,11 +33,18 @@ ul {
 }
 
 .navbar {
+  width: -webkit-fill-available;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  position: fixed;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
-  padding: 2rem 0;
+  padding: 2rem;
+  background-color: #211e1e;
 }
 .navbar .brand__container {
   display: flex;
@@ -76,8 +83,8 @@ ul {
   top: 0;
   right: -350px;
   height: 100%;
-  width: 55%;
-  background-color: black;
+  width: 25%;
+  background-color: #211e1e;
   z-index: 100;
   display: flex;
   flex-direction: column;
@@ -86,7 +93,7 @@ ul {
   visibility: hidden;
   transition: 0.4s ease-in-out;
   color: white;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .responsive__navbar .brand {
   display: flex;
@@ -210,12 +217,11 @@ p {
 
 .contact {
   display: flex;
-  margin: 4rem 20rem;
   gap: 3rem;
 }
 .contact .right img {
   height: 25rem;
-  width: 20rem;
+  width: 23rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -269,11 +275,11 @@ p {
 .scrollToTop {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 25px;
   background-color: #303030;
   z-index: 20;
-  padding: 0.7rem 1rem;
-  border-radius: 5rem;
+  padding: 0.8rem 1rem;
+  border-radius: 100%;
   cursor: pointer;
 }
 .scrollToTop i {
@@ -397,7 +403,7 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   background-color: #181818;
   gap: 5rem;
-  padding: 4rem 11rem;
+  padding: 2rem 10rem;
   color: rgb(129, 128, 128);
 }
 footer .section h2 {
@@ -571,6 +577,7 @@ footer .tags li:hover {
   grid-template-columns: 50% 50%;
   overflow: hidden;
   height: 60vh;
+  margin-top: 7rem;
 }
 .hero .content {
   display: flex;

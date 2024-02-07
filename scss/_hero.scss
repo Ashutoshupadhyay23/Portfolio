@@ -3,6 +3,7 @@
   grid-template-columns: 50% 50%;
   overflow: hidden;
   height: 60vh;
+  margin-top: 7rem;
   .content {
     display: flex;
     flex-direction: column;
@@ -27,3 +28,64 @@
     }
   }
 }
+
+
+// .hero {
+//   // background-color: green;
+//   // display: grid;
+//   margin-top: 6.5rem;
+//   // grid-template-columns: 50% 50%;
+//   // overflow: hidden;
+//   // height: 60vh;
+//   .content {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     // align-items: flex-start;
+//     align-items: center;
+//     // position: relative;
+//     // gap: 2rem;
+//     gap: 1rem;
+//     h1{
+//       @include gradientText;
+//       font-size: 4vw;
+//     }
+//     p{
+//       width: 40rem;
+//       text-align: center;
+//       margin: 0 0 1rem;
+//     }
+//     a{
+//       text-decoration: none;
+//     }
+
+
+//     // .title {
+//     //   h1 {
+//     //     @include gradientText;
+//     //     font-size: 5vw;
+//     //   }
+//     // }
+
+//   }
+
+  
+
+//   .image {
+//     // position: relative;
+//     img {
+//       // position: absolute;
+//       // bottom: 0;
+//       // height: 60vh;
+//       // width: 40vw;
+//       // object-fit: cover;
+
+//       width: 17rem;
+//       height: 21rem;
+//       border-radius: 10rem 10rem 1rem 1rem;
+//       overflow: hidden;
+//       object-fit: cover;
+
+//     }
+//   }
+// }

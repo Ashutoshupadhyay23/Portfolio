@@ -1,11 +1,11 @@
 .scrollToTop {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    right: 25px;
     background-color: #303030;
     z-index: 20;
-    padding: 0.7rem 1rem;
-    border-radius: 5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 100%;
     cursor: pointer;
     i {
         @include gradientText;
