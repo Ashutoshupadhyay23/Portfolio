@@ -7,7 +7,7 @@ const sr = ScrollReveal({
 
 sr.reveal(
     `
-    nav, .hero, .about, .skills, .portfolio, .services, .languages, .contact, .footer, .lower__footer
+    nav, .hero, .about, .skills, .portfolio, .services, .languages, .contact, .footer,
     `,
     {
     interval:300,
