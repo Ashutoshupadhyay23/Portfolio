@@ -13,6 +13,7 @@
     background-color: #211e1e;
 
     .brand__container {
+        @include gradientText;
         display: flex;
         .toggle {
             display: none;

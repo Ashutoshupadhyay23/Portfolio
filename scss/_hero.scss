@@ -15,6 +15,10 @@
         @include gradientText;
         font-size: 5vw;
       }
+      h2{
+        @include gradientText;
+        font-size: 4vw;
+      }
     }
   }
   .image {

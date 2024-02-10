@@ -47,6 +47,9 @@ ul {
   background-color: #211e1e;
 }
 .navbar .brand__container {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: flex;
 }
 .navbar .brand__container .toggle {
@@ -591,6 +594,12 @@ footer .tags li:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 5vw;
+}
+.hero .content .title h2 {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4vw;
 }
 .hero .image {
   position: relative;
