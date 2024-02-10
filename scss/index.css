@@ -247,12 +247,14 @@ p {
   background-color: transparent;
   border: 1px solid rgb(129, 128, 128);
   color: white;
+  outline: none;
 }
 .contact .left .form textarea {
   padding: 0.8rem 7rem 0.8rem 0.8rem;
   background-color: transparent;
   border: 1px solid rgb(129, 128, 128);
   color: white;
+  outline: none;
 }
 .contact .left span {
   margin-top: 5px;
