@@ -8,6 +8,7 @@
             flex-direction: column;
             align-items: center;
             gap: 2rem;
+            text-align: center;
         }
     }
 }
@@ -16,6 +17,7 @@
     height: 90px;
     width: 90px;
     position: relative;
+    z-index: 0;
     .inner {
         position: absolute;
         z-index: 10;

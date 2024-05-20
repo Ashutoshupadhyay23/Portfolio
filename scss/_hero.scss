@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   overflow: hidden;
-  height: 60vh;
-  margin-top: 7rem;
+  height: 95vh;
   .content {
     display: flex;
     flex-direction: column;
@@ -16,80 +15,75 @@
         font-size: 5vw;
       }
       h2{
-        @include gradientText;
-        font-size: 4vw;
+        font-size: 3rem;
+        color: white;
       }
     }
+    .links {
+      ul {
+          display: flex;
+          align-items: center;
+          gap: 2px;
+          
+          li {
+              a {
+                  cursor: pointer;
+                  text-decoration: none;
+                  color: inherit;
+                  &:hover {
+                      @include gradientText;
+                  }
+                 
+              }
+          }
+          button {
+              padding: 0.5rem;
+          }
+      }
+  }
   }
   .image {
     position: relative;
     img {
       position: absolute;
       bottom: 0;
-      height: 60vh;
-      width: 40vw;
+      height: 85vh;
+      width: 50vw;
       object-fit: cover;
     }
   }
 }
 
 
-// .hero {
-//   // background-color: green;
-//   // display: grid;
-//   margin-top: 6.5rem;
-//   // grid-template-columns: 50% 50%;
-//   // overflow: hidden;
-//   // height: 60vh;
-//   .content {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     // align-items: flex-start;
-//     align-items: center;
-//     // position: relative;
-//     // gap: 2rem;
-//     gap: 1rem;
-//     h1{
-//       @include gradientText;
-//       font-size: 4vw;
-//     }
-//     p{
-//       width: 40rem;
-//       text-align: center;
-//       margin: 0 0 1rem;
-//     }
-//     a{
-//       text-decoration: none;
-//     }
-
-
-//     // .title {
-//     //   h1 {
-//     //     @include gradientText;
-//     //     font-size: 5vw;
-//     //   }
-//     // }
-
-//   }
-
-  
-
-//   .image {
-//     // position: relative;
-//     img {
-//       // position: absolute;
-//       // bottom: 0;
-//       // height: 60vh;
-//       // width: 40vw;
-//       // object-fit: cover;
-
-//       width: 17rem;
-//       height: 21rem;
-//       border-radius: 10rem 10rem 1rem 1rem;
-//       overflow: hidden;
-//       object-fit: cover;
-
-//     }
-//   }
-// }
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .hero {
+    margin: 0 10vw;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    gap: 2rem;
+    .content {
+      align-items: center;
+      .title {
+        h1 {
+          font-size: 3.5rem;
+          text-align: center;
+        }
+        h2{
+          font-size: 2.5rem;
+          text-align: center;
+        }
+      }
+    }
+    .image {
+      position: initial;
+      margin-top: 5rem;
+      height: 20rem;
+      img {
+        position: initial;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

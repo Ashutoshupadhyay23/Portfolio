@@ -23,30 +23,61 @@
         }
     }
 
-    .hero {
-        margin: 0 10vw;
-        display: flex;
-        flex-direction: column-reverse;
-        height: 100%;
-        gap: 2rem;
-        .content {
-            align-items: center;
-            .title {
-                h1 {
-                    font-size: 3rem;
-                }
-            }
-        }
-        .image {
-            position: initial;
-            img {
-                position: initial;
-                height: 100%;
-                width: 100%;
-            }
+    // .hero {
+    //     margin: 0 10vw;
+    //     display: flex;
+    //     flex-direction: column-reverse;
+    //     height: 100%;
+    //     gap: 2rem;
+    //     .content {
+    //         align-items: center;
+    //         .title {
+    //             h1 {
+    //                 font-size: 3rem;
+    //             }
+    //         }
+    //     }
+    //     .image {
+    //         position: initial;
+    //         img {
+    //             position: initial;
+    //             height: 100%;
+    //             width: 100%;
+    //         }
             
-        }
-    }
+    //     }
+    // }
+
+    // #header{
+    //     // background-image: url(../assets/me2.jpg);
+    //     // display: flex;
+    //     .container{
+    //         // display: flex;
+    //         // padding: 5px 5%;
+    //         .header-text{
+    //             margin-top: 40vh;
+    //             // font-size: 30px;
+    //             h3{
+    //                 font-size: 2.2rem;
+    //             }
+    //             h1{
+    //                 span{
+    //                     font-size: 3.3rem;
+    //                 }
+    //             }
+    //             h4{
+    //                 font-size: 1.5rem;
+    //             }
+    //             p{
+    //                 font-size: 1.3rem;
+    //             }
+    //         }
+    //         .container-btn{
+    //             display: none;
+    //         }
+    //     }
+    // }
+
 
     .about {
         margin: 0 10vw;

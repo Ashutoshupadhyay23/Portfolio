@@ -23,22 +23,13 @@ ul {
   --gradient: linear-gradient(to right, #c5e35b, #45b649);
 }
 
-::-webkit-scrollbar {
-  background-color: #454040;
-  width: 0.3rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #45b649;
-}
-
 .navbar {
   width: -webkit-fill-available;
   z-index: 1;
   left: 0;
   top: 0;
   position: fixed;
-  height: 5rem;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,7 +50,7 @@ ul {
 .navbar .links ul {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 2px;
 }
 .navbar .links ul li a {
   cursor: pointer;
@@ -99,6 +90,9 @@ ul {
   padding: 2rem 0;
 }
 .responsive__navbar .brand {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: flex;
   margin-bottom: 1.5rem;
 }
@@ -116,6 +110,11 @@ ul {
 .responsive__navbar .links ul li a {
   text-decoration: none;
   color: inherit;
+}
+.responsive__navbar .links ul li a:hover {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .responsive__navbar .links ul ul {
   display: flex;
@@ -242,19 +241,16 @@ p {
   margin: 2rem 0;
   gap: 1rem;
 }
-.contact .left .form input {
-  padding: 0.8rem 7rem 0.8rem 0.8rem;
-  background-color: transparent;
+.contact .left .form input, .contact .left .form textarea {
+  width: 100%;
   border: 1px solid rgb(129, 128, 128);
-  color: white;
   outline: none;
-}
-.contact .left .form textarea {
-  padding: 0.8rem 7rem 0.8rem 0.8rem;
   background-color: transparent;
-  border: 1px solid rgb(129, 128, 128);
+  padding: 10px;
+  margin: 8px 0px;
   color: white;
-  outline: none;
+  font-size: 15px;
+  border-radius: 6px;
 }
 .contact .left span {
   margin-top: 5px;
@@ -352,12 +348,14 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  text-align: center;
 }
 
 .circular {
   height: 90px;
   width: 90px;
   position: relative;
+  z-index: 0;
 }
 .circular .inner {
   position: absolute;
@@ -447,7 +445,6 @@ footer ul {
 footer ul li {
   display: flex;
   gap: 0.7rem;
-  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 footer ul li:hover {
@@ -499,27 +496,6 @@ footer .tags li:hover {
   }
   .navbar .links {
     display: none;
-  }
-  .hero {
-    margin: 0 10vw;
-    display: flex;
-    flex-direction: column-reverse;
-    height: 100%;
-    gap: 2rem;
-  }
-  .hero .content {
-    align-items: center;
-  }
-  .hero .content .title h1 {
-    font-size: 3rem;
-  }
-  .hero .image {
-    position: initial;
-  }
-  .hero .image img {
-    position: initial;
-    height: 100%;
-    width: 100%;
   }
   .about {
     margin: 0 10vw;
@@ -581,8 +557,7 @@ footer .tags li:hover {
   display: grid;
   grid-template-columns: 50% 50%;
   overflow: hidden;
-  height: 60vh;
-  margin-top: 7rem;
+  height: 95vh;
 }
 .hero .content {
   display: flex;
@@ -598,10 +573,26 @@ footer .tags li:hover {
   font-size: 5vw;
 }
 .hero .content .title h2 {
+  font-size: 3rem;
+  color: white;
+}
+.hero .content .links ul {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.hero .content .links ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.hero .content .links ul li a:hover {
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 4vw;
+}
+.hero .content .links ul button {
+  padding: 0.5rem;
 }
 .hero .image {
   position: relative;
@@ -609,12 +600,42 @@ footer .tags li:hover {
 .hero .image img {
   position: absolute;
   bottom: 0;
-  height: 60vh;
-  width: 40vw;
+  height: 85vh;
+  width: 50vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .hero {
+    margin: 0 10vw;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    gap: 2rem;
+  }
+  .hero .content {
+    align-items: center;
+  }
+  .hero .content .title h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .hero .content .title h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .hero .image {
+    position: initial;
+    margin-top: 5rem;
+    height: 20rem;
+  }
+  .hero .image img {
+    position: initial;
+    height: 100%;
+    width: 100%;
+  }
+}
 .portfolio {
   position: relative;
 }
@@ -662,4 +683,88 @@ footer .tags li:hover {
 }
 .portfolio .container .portfolio__container:nth-of-type(3) .image img:hover {
   top: -290%;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/me.jpg);
+  background-position: center;
+  /* parallex effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+#header .container {
+  padding: 5px 5%;
+}
+#header .container .header-text {
+  margin-top: 220px;
+  font-size: 30px;
+}
+#header .container .header-text h3 {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
+  margin-top: 10px;
+}
+#header .container .header-text h1 span {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#header .container .header-text h4 {
+  color: white;
+  margin: 1rem 0;
+}
+#header .container .header-text p {
+  color: rgb(216, 199, 199);
+  font-size: 1.4rem;
+}
+#header .container .container-btn ul {
+  display: flex;
+  gap: 30px;
+  font-size: 30px;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+#header .container .container-btn ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+#header .container .container-btn ul li a:hover {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #67be41;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

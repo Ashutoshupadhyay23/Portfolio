@@ -4,7 +4,7 @@
     left: 0;
     top: 0;
     position: fixed;
-    height: 5rem;
+    height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +24,7 @@
         ul {
             display: flex;
             align-items: center;
-            gap: 1.25rem;
+            gap: 2px;
             
             li {
                 a {
@@ -69,6 +69,7 @@
     color: white;
     padding: 2rem 0;
     .brand {
+        @include gradientText;
         display: flex;
         margin-bottom: 1.5rem;
         h2 {
@@ -83,6 +84,9 @@
                 a {
                     text-decoration: none;
                     color: inherit;
+                    &:hover {
+                        @include gradientText;
+                    }
                 }
                 font-size: 2.5vh;
                 cursor: pointer;

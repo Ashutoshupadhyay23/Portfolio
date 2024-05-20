@@ -41,7 +41,7 @@ footer {
         li {
             display: flex;
             gap: 0.7rem;
-            transition: 0.5s ease-in-out;
+            // transition: 0.5s ease-in-out;
             cursor: pointer;
             &:hover {
                 @include gradientText;

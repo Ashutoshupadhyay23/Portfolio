@@ -25,19 +25,31 @@
             align-items: flex-start;
             margin: 2rem 0;
             gap: 1rem;
-            input {
-                padding: 0.8rem 7rem 0.8rem 0.8rem;
-                background-color: transparent;
+            // input {
+            //     padding: 0.8rem 7rem 0.8rem 0.8rem;
+            //     background-color: transparent;
+            //     border: 1px solid rgb(129, 128, 128);
+            //     color: white;
+            //     outline: none;
+            // }
+            // textarea {
+            //     padding: 0.8rem 7rem 0.8rem 0.8rem;
+            //     background-color: transparent;
+            //     border: 1px solid rgb(129, 128, 128);
+            //     color: white;
+            //     outline: none;
+            // }
+
+            input, textarea{
+                width: 100%;
                 border: 1px solid rgb(129, 128, 128);
-                color: white;
                 outline: none;
-            }
-            textarea {
-                padding: 0.8rem 7rem 0.8rem 0.8rem;
                 background-color: transparent;
-                border: 1px solid rgb(129, 128, 128);
+                padding: 10px;
+                margin: 8px 0px;
                 color: white;
-                outline: none;
+                font-size: 15px;
+                border-radius: 6px;
             }
         }
         span {
