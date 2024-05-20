@@ -252,6 +252,9 @@ p {
   font-size: 15px;
   border-radius: 6px;
 }
+.contact .left button {
+  margin-top: 1rem;
+}
 .contact .left span {
   margin-top: 5px;
   background: var(--gradient);
@@ -303,7 +306,7 @@ p {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
   text-align: center;
 }
@@ -491,6 +494,9 @@ footer .tags li:hover {
     gap: 2rem;
     width: 100%;
   }
+  .navbar .brand__container .brand h2 {
+    font-size: 1.2rem;
+  }
   .navbar .brand__container .toggle {
     display: block;
   }
@@ -518,6 +524,7 @@ footer .tags li:hover {
   .skills .content {
     flex-direction: column;
     text-align: center;
+    gap: 3rem;
   }
   .services .container {
     grid-template-columns: 1fr;
@@ -525,6 +532,7 @@ footer .tags li:hover {
   .languages .container {
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
   }
   .contact {
     flex-direction: column;
@@ -544,6 +552,18 @@ footer .tags li:hover {
     padding: 5vw 10vw;
     grid-template-columns: 1fr;
     gap: 5vw;
+  }
+  footer .tags {
+    gap: 1rem;
+  }
+  footer .section .brand h2 {
+    font-size: 2rem;
+  }
+  footer .section .social {
+    gap: 1rem;
+  }
+  footer ul {
+    gap: 1rem;
   }
   .lower__footer {
     flex-direction: column;
@@ -616,14 +636,18 @@ footer .tags li:hover {
   }
   .hero .content {
     align-items: center;
+    gap: 2rem;
   }
   .hero .content .title h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
   }
   .hero .content .title h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
+  }
+  .hero .content button {
+    margin-top: 1rem;
   }
   .hero .image {
     position: initial;
@@ -649,7 +673,7 @@ footer .tags li:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.7rem;
+  gap: 1.3rem;
   background-color: #181818;
   padding: 1.5rem;
   text-align: center;

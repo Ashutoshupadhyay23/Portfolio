@@ -64,15 +64,19 @@
     gap: 2rem;
     .content {
       align-items: center;
+      gap: 2rem;
       .title {
         h1 {
-          font-size: 3.5rem;
+          font-size: 3rem;
           text-align: center;
         }
         h2{
-          font-size: 2.5rem;
+          font-size: 2rem;
           text-align: center;
         }
+      }
+      button{
+        margin-top: 1rem;
       }
     }
     .image {

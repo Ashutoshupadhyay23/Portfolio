@@ -52,6 +52,9 @@
                 border-radius: 6px;
             }
         }
+        button{
+            margin-top: 1rem;
+        }
         span {
             margin-top: 5px;
             @include gradientText;

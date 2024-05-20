@@ -14,6 +14,11 @@
             align-items: center;
             gap: 2rem;
             width: 100%;
+            .brand{
+                h2{
+                    font-size: 1.2rem;
+                }
+            }
             .toggle {
                 display: block;
             }
@@ -115,7 +120,7 @@
         .content {
             flex-direction: column;
             text-align: center;
-
+            gap: 3rem;
         }
     }
 
@@ -129,6 +134,7 @@
         .container {
             flex-direction: column;
             align-items: center;
+            gap: 2rem;
         }
     }
 
@@ -154,6 +160,23 @@
     }
 
     footer {
+        .tags{
+            gap: 1rem;
+        }
+        .section{
+            .brand{
+                h2{
+                    font-size: 2rem;
+                }
+            }
+            .social{
+                gap: 1rem;
+            }
+        }
+        ul{
+           gap: 1rem;
+        }
+
         padding: 5vw 10vw;
         grid-template-columns: 1fr;
         gap: 5vw;
