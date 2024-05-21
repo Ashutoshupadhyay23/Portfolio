@@ -141,6 +141,7 @@ button {
   gap: 1rem;
   align-items: center;
   cursor: pointer;
+  border-radius: 50px;
 }
 
 .spring {
@@ -509,6 +510,10 @@ footer .tags li:hover {
   .about img {
     width: 100% !important;
   }
+  .portfolio .container p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
   .portfolio .container .portfolio__container {
     padding: 1rem;
   }
@@ -526,13 +531,23 @@ footer .tags li:hover {
     text-align: center;
     gap: 3rem;
   }
+  .skills .content h3 {
+    margin-top: 1rem;
+  }
   .services .container {
     grid-template-columns: 1fr;
+  }
+  .services .container h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
   .languages .container {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+  }
+  .languages .container .language img {
+    margin: 0.7rem;
   }
   .contact {
     flex-direction: column;
@@ -553,16 +568,13 @@ footer .tags li:hover {
     grid-template-columns: 1fr;
     gap: 5vw;
   }
-  footer .tags {
-    gap: 1rem;
-  }
-  footer .section .brand h2 {
-    font-size: 2rem;
-  }
   footer .section .social {
-    gap: 1rem;
+    gap: 1.5rem;
   }
-  footer ul {
+  footer .section ul li {
+    margin-top: 0.7rem;
+  }
+  footer .section .tags {
     gap: 1rem;
   }
   .lower__footer {
@@ -571,6 +583,9 @@ footer .tags li:hover {
     padding: 2vw;
     gap: 0.7 rem;
     color: rgb(186, 179, 179);
+  }
+  .lower__footer span i {
+    color: red;
   }
 }
 .hero {
