@@ -488,6 +488,20 @@ footer .tags li:hover {
   .defaultMargin {
     margin: 0 10vw;
   }
+  .spring {
+    margin: 3rem 0;
+  }
+  .spring .coil {
+    border-top: white dashed 0.09rem;
+    width: 49.75%;
+  }
+  .spring .bar {
+    height: 4.5rem;
+  }
+  .navbar {
+    height: 3.5rem;
+    padding: 1.5rem;
+  }
   .navbar .brand__container {
     display: flex;
     justify-content: space-between;
@@ -503,6 +517,10 @@ footer .tags li:hover {
   }
   .navbar .links {
     display: none;
+  }
+  .responsive__navbar .links ul li {
+    font-size: 3vh;
+    margin: 3vh;
   }
   .about {
     margin: 0 10vw;
@@ -569,6 +587,9 @@ footer .tags li:hover {
     grid-template-columns: 1fr;
     gap: 5vw;
   }
+  footer .section h2 {
+    font-size: 2rem;
+  }
   footer .section .social li i {
     margin: 1rem;
     font-size: 1.5rem;
@@ -581,6 +602,7 @@ footer .tags li:hover {
   }
   footer .section .tags li {
     margin-right: 10px;
+    margin-top: 0;
   }
   .lower__footer {
     flex-direction: column;
@@ -656,7 +678,7 @@ footer .tags li:hover {
   }
   .hero .content {
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   .hero .content .title h1 {
     font-size: 3rem;
@@ -671,7 +693,7 @@ footer .tags li:hover {
   }
   .hero .image {
     position: initial;
-    margin-top: 5rem;
+    margin-top: 4.5rem;
     height: 20rem;
   }
   .hero .image img {

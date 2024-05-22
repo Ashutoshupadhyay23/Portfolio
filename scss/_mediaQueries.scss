@@ -7,7 +7,20 @@
         margin: 0 10vw;
     }
 
+    .spring{
+        margin: 3rem 0;
+        .coil{
+            border-top: white dashed 0.09rem;
+            width: 49.75%;
+        }
+        .bar{
+            height: 4.5rem;
+        }
+    }
+
     .navbar {
+        height: 3.5rem;
+        padding: 1.5rem;
         .brand__container {
             display: flex;
             justify-content: space-between;
@@ -26,6 +39,11 @@
         .links {
             display: none;
         }
+    }
+
+    .responsive__navbar .links ul li {
+        font-size: 3vh;
+        margin: 3vh;
     }
 
     // .hero {
@@ -178,6 +196,9 @@
 
     footer {
         .section{
+            h2{
+                font-size: 2rem;
+            }
             .social{
                 li{
                     i{
@@ -199,6 +220,7 @@
                 gap: 0.7rem;
                 li{
                     margin-right: 10px;
+                    margin-top: 0;
                 }
             }
         }
