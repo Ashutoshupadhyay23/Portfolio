@@ -657,7 +657,6 @@ footer .tags li:hover {
   position: absolute;
   bottom: 0;
   height: 85vh;
-  width: 50vw;
   -o-object-fit: cover;
      object-fit: cover;
 }
